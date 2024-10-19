@@ -1,0 +1,17 @@
+document.getElementById("main-add-money-btn").addEventListener("click",function(){
+  
+const addMoneyUnhidden = getHiddenByid("add-money-form")
+
+})
+document.getElementById("main-cash-out-btn").addEventListener("click",function(){
+  
+const addMoneyUnhidden = getHiddenByid("cash-out-form")
+
+})
+document.getElementById("transaction-btn").addEventListener("click",function(){
+  
+const addMoneyUnhidden = getHiddenByid("transaction-section")
+
+
+
+})

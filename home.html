@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="bg-white" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo mfs practice</title>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3"><div class="stats shadow">
+                <div class="stat text-center ">
+                  <div  class="stat-title">Account Balance</div>
+                  <div id="account-balance" class="stat-value ">10400</div>            
+                </div>
+              </div>
+              <div class="divider"></div>
+                <!-- features btn start  -->
+                <div>
+                    <button id="main-add-money-btn" class="btn">Add Money</button>
+                    <button id="main-cash-out-btn" class="btn">Cash Out</button>
+                    <button id="transaction-btn" class="btn">transactions</button>
+                    <div class="divider"></div>
+                  </div>
+                      <!-- features btn  end -->
+                       <!-- add money section start -->
+                      <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="amount-1" type="text" placeholder="Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">pin</span>
+                            </label>
+                            <input id="pin-number-1" type="password" autocomplete="off" placeholder="Pin Number" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                       <!-- add money section end -->
+                       <!-- Cash out  section start -->
+                      <div id="cash-out-form" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input id="amount-2" type="text" placeholder="Amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">pin</span>
+                            </label>
+                            <input id="pin-number-2" type="password" autocomplete="off" placeholder="Pin Number" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                       <!--cash out  section end -->
+                       <!-- tansaction section start -->
+                        <div id="transaction-section" class="hidden text-center">
+                          <h1 class="text-4xl">Transactons Money</h1>
+
+                        </div>
+                       <!-- tansaction section end -->
+
+            </div>
+            </div>
+          </div>
+          
+          </div>
+    </main>
+    <!-- javascript files link -->
+    <script src="utilitis.js"></script>
+    <script src="features"></script>
+    <script src="cashout.js"></script>
+    <script src="addfunc.js"></script>
+</body>
+</html>
